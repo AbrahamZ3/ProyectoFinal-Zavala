@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Stock de Autos Usados</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Control de Stock de Autos Usados</h1>
+<br>
+    <form id="formulario" class="form">
+        <label for="marca">Marca:</label>
+        <input type="text"  class="campo" id="marca" required>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" class="campo" id="modelo" required>
+
+        <label for="ano">Año:</label>
+        <input type="number" class="campo" id="ano" required>
+        
+        <label for="precio">Precio:</label>
+        <input type="number" class="campo" id="precio" required>
+
+        <button class="btn-agregar" type="submit">Agregar Auto</button>
+    </form>
+
+<br>
+<div class="btn-buscar">
+
+    <label for="precio">Buscar autos por marca o modelo:</label>
+    <input class="campo-buscar" type="text" id="busqueda" placeholder="Buscar">
+
+</div>
+<br>
+    <ul id="lista-autos" class="lista_autos">
+        
+
+
+
+    </ul>
+
+
+    <div id="clima"></div>
+
+
+    <script src="app.js"></script> 
+</body>
+</html>
